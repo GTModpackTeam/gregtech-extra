@@ -17,7 +17,6 @@
 | [v0.x.x(EOL)](/CHANGELOG_v0.md) | This version is already no longer supported. | 既にサポートが終了しているバージョンです。 |
 | [v1.x.x(EOL)](/CHANGELOG_v1.md) | Its the most stable version available on curseforge, using old version of GTCEu. Since the dev team are focusing on v2 development, this version will unlikely receive supports. | 古いバージョンのGTCEuが導入されている、CurseForge上での2022/10/28時点での安定版です。なお現在はv2の開発に移行しており、v1でのバグ修正はv2にて取り込まれます。 |
 | [v2.x.x](/CHANGELOG_v2.md) | This is the next version that includes the latest version of GTCEu, which we have started to release this time on CurseForge and Github.<br />The version including GCY:S (Gregicality Science) was discontinued on 2022/10/28, as updates on the GT side are not expected in the near future. | CurseForgeやGithubで今回公開し始めた、最新版のGTCEuを含んだ次期バージョンです。<br />GCY:S(Gregicality Science)を含んだバージョンはGT側の更新が当面期待できないことから、2022/10/28から廃止しました。 |
-| [v3.x.x](/CHANGELOG_v3.md) | This was an experimental version prepared to debug GCY:S and provide feedback to the GTCEu development team, but the plan was dropped and this version is intended to be an ambitious update. <br />Also, this version will be distributed on GitHub only, but playing it in survival mode is deprecated. | GCY:SをデバッグしてGTCEuの開発陣にフィードバックするために用意された実験的なバージョンでしたが、計画を取りやめ意欲的な更新を目指すバージョンです。<br />またこのバージョンはGitHubのみで配布しますが、サバイバルモードでプレイすることは非推奨です。 |
 
 
 ## About
@@ -36,12 +35,6 @@
         - You want to process more ores?
     - [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
         - You want to make RF wireless?
-    - (**WIP**) [Forestry](https://www.curseforge.com/minecraft/mc-mods/forestry)
-        - You want to bee breeding?
-    - (**WIP**) [Ender IO Forestry](https://www.curseforge.com/minecraft/mc-mods/ender-io-forestry)
-        - You want to filter out bees?
-    - (**WIP**) [Gendustry](https://www.curseforge.com/minecraft/mc-mods/gendustry)
-        - You want to automate bee breeding?
     - (**WIP**) [Thaumcraft](https://www.curseforge.com/minecraft/mc-mods/thaumcraft)
         - You want to use Thaumcraft's magic?
     - (**WIP**) [Thaumic Energistics Extended Life Fork](https://www.curseforge.com/minecraft/mc-mods/thaumic-energistics-extended-life-fork)

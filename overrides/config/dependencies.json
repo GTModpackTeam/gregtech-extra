@@ -1,17 +1,1 @@
-[
-    {
-      "path": "mods/ProjectRed-1.12.2-4.9.4.120-Base.jar",
-      "url": "https://mediafilez.forgecdn.net/files/2745/545/ProjectRed-1.12.2-4.9.4.120-Base.jar",
-      "disabled": false
-    },
-    {
-        "path": "mods/ProjectRed-1.12.2-4.9.4.120-lighting.jar",
-        "url": "https://mediafilez.forgecdn.net/files/2745/549/ProjectRed-1.12.2-4.9.4.120-lighting.jar",
-        "disabled": false
-    },
-    {
-        "path": "mods/ProjectRed-1.12.2-4.9.4.120-integration.jar",
-        "url": "https://mediafilez.forgecdn.net/files/2745/548/ProjectRed-1.12.2-4.9.4.120-integration.jar",
-        "disabled": false
-    }
-]
+[]

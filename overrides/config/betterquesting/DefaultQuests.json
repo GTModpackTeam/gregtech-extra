@@ -476,29 +476,30 @@
               }
             }
           },
-          "name:8": "殺人鬼が持ってそうな凶器ベスト4"
+          "name:8": "殺人鬼が持ってそうな凶器ベスト4",
+          "tasklogic:8": "OR"
         }
       },
       "questID:3": 8,
       "tasks:9": {
         "0:10": {
           "entryLogic:8": "OR",
-          "ignoreNBT:1": 1,
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 32767,
               "id:8": "gregtech:file",
               "tag:10": {
+                "DisallowContainerItem:1": 0,
                 "GT.Behaviours:10": {},
                 "GT.Tool:10": {
                   "AttackDamage:5": 0.0,
                   "AttackSpeed:5": -2.4,
                   "Durability:3": 0,
                   "Material:8": "gregtech:iron",
-                  "MaxDurability:3": 256
-                }
+                  "MaxDurability:3": 255
+                },
+                "HideFlags:3": 2
               }
             },
             "1:10": {
@@ -549,6 +550,81 @@
                   "Durability:3": 0,
                   "Material:8": "gregtech:iron",
                   "MaxDurability:3": 255
+                },
+                "HideFlags:3": 2
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "entryLogic:8": "OR",
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:file",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {},
+                "GT.Tool:10": {
+                  "AttackDamage:5": 0.0,
+                  "AttackSpeed:5": -2.6000001,
+                  "Durability:3": 0,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383
+                },
+                "HideFlags:3": 2
+              }
+            },
+            "1:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:saw",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {
+                  "HarvestIce:1": 1
+                },
+                "GT.Tool:10": {
+                  "AttackDamage:5": 1.0,
+                  "AttackSpeed:5": -2.8,
+                  "Durability:3": 0,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383
+                },
+                "HideFlags:3": 2
+              }
+            },
+            "2:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:wrench",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {},
+                "GT.Tool:10": {
+                  "AttackDamage:5": 3.0,
+                  "AttackSpeed:5": -3.0,
+                  "Durability:3": 0,
+                  "HarvestLevel:3": 2,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383,
+                  "ToolSpeed:5": 6.0
+                },
+                "HideFlags:3": 2
+              }
+            },
+            "3:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:screwdriver",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {},
+                "GT.Tool:10": {
+                  "AttackDamage:5": 1.0,
+                  "AttackSpeed:5": 2.8,
+                  "Durability:3": 0,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383
                 },
                 "HideFlags:3": 2
               }
@@ -640,20 +716,20 @@
             }
           },
           "name:8": "100万t",
-          "questlogic:8": "OR"
+          "questlogic:8": "OR",
+          "tasklogic:8": "OR"
         }
       },
       "questID:3": 11,
       "tasks:9": {
         "0:10": {
-          "ignoreNBT:1": 1,
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 32767,
               "id:8": "gregtech:hammer",
               "tag:10": {
+                "DisallowContainerItem:1": 0,
                 "GT.Behaviours:10": {},
                 "GT.Tool:10": {
                   "AttackDamage:5": 3.0,
@@ -661,9 +737,34 @@
                   "Durability:3": 0,
                   "HarvestLevel:3": 2,
                   "Material:8": "gregtech:iron",
-                  "MaxDurability:3": 256,
+                  "MaxDurability:3": 255,
                   "ToolSpeed:5": 6.0
-                }
+                },
+                "HideFlags:3": 2
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:hammer",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {},
+                "GT.Tool:10": {
+                  "AttackDamage:5": 3.0,
+                  "AttackSpeed:5": -3.0,
+                  "Durability:3": 0,
+                  "HarvestLevel:3": 2,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383,
+                  "ToolSpeed:5": 6.0
+                },
+                "HideFlags:3": 2
               }
             }
           },
@@ -699,7 +800,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "タスクに要求されているツールは原始時代や蒸気時代にはあまり使用しないか、ModPack全体を通じて需要の小さいツールです。\n必要な時に必要なものを作るといいでしょう。\n\nバール\nバールは機械に取り付けたカバーを機械を壊すことなく撤去できるツールです。\nカバーに対して右クリックするだけで使用できます。\n\nワイヤーカッター\n- ワイヤーカッターはワイヤーをクラフトしたり撤去したり接続したりするツールです。\nGTCEuの仕様でワイヤーとケーブルはレンチでも撤去できてしまうのでその面であまり価値はありませんが、ワイヤーとケーブルはデフォルトで他のワイヤーとケーブルや機械に繋がらないという仕様が追加されているので、手動で接続できるワイヤーカッターは電気時代に入った後は必要不可欠なツールです。\n\n鎌\n- 左クリックで広範囲の作物やサトウキビを一括伐採+植えなおしすることができます。\n- 武器としても優秀です。\n\n肉切り包丁\n- 肉切り包丁で敵を倒すとより多くのアイテムがドロップします。\n- 革を集める時に最も活躍します。\n\nナイフ\n- ナイフはゴムをリングにしたりなどいくつかのレシピで要求されます。\n- 主に電気時代以降に出番があります。\n\nラバーカップ\n- ラバーカップは機械に右クリックすることで使用でき、機械の入力スロットに入っている液体を廃棄することができます。\n\nハサミ\n- ハサミです。\n\nタービンローター\n- 内部的にはツールなのでここで紹介します。\n- タービンローターは大型タービンを動かすための羽です。詳細は実際に使用するとき解説します。",
+          "desc:8": "タスクに要求されているツールは原始時代や蒸気時代にはあまり使用しないか、ModPack全体を通じて需要の小さいツールです。\n必要な時に必要なものを作るといいでしょう。\n\nバール\nバールは機械に取り付けたカバーを機械を壊すことなく撤去できるツールです。\nカバーに対して右クリックするだけで使用できます。\n\nワイヤーカッター\n- ワイヤーカッターはワイヤーをクラフトしたり撤去したり接続したりするツールです。\nGTCEuの仕様でワイヤーとケーブルはレンチでも撤去できてしまうのでその面であまり価値はありませんが、ワイヤーとケーブルはデフォルトで他のワイヤーとケーブルや機械に繋がらないという仕様が追加されているので、手動で接続できるワイヤーカッターは電気時代に入った後は必要不可欠なツールです。\n\n鎌\n- 左クリックで広範囲の作物やサトウキビを一括伐採+植えなおしすることができます。\n- 武器としても優秀です。\n\n肉切り包丁\n- 肉切り包丁で敵を倒すとより多くのアイテムがドロップします。\n- 革を集める時に最も活躍します。\n\nナイフ\n- ナイフはゴムをリングにしたりなどいくつかのレシピで要求されます。\n- 主に電気時代以降に出番があります。\n\nラバーカップ\n- ラバーカップは機械に右クリックすることで使用でき、機械の入力スロットに入っている液体を廃棄することができます。\n- コチラも電気時代以降で出番がありますが、こちらは説明のみで作成はしませんが記憶の片隅には入れといてください。\n\nハサミ\n- ハサミです。ただほぼ出番ないので作成不要です。\n\nタービンローター\n- 内部的にはツールなのでここで紹介します。\n- タービンローターは大型タービンを動かすための羽です。詳細は実際に使用するとき解説します。",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 32767,
@@ -711,21 +812,21 @@
               }
             }
           },
-          "name:8": "お母さんが使ってそうな道具ベスト7"
+          "name:8": "お母さんが使ってそうな道具ベスト7",
+          "tasklogic:8": "OR"
         }
       },
       "questID:3": 13,
       "tasks:9": {
         "0:10": {
           "entryLogic:8": "OR",
-          "ignoreNBT:1": 1,
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 32767,
               "id:8": "gregtech:crowbar",
               "tag:10": {
+                "DisallowContainerItem:1": 0,
                 "GT.Behaviours:10": {},
                 "GT.Tool:10": {
                   "AttackDamage:5": 4.0,
@@ -733,9 +834,10 @@
                   "Durability:3": 0,
                   "HarvestLevel:3": 2,
                   "Material:8": "gregtech:iron",
-                  "MaxDurability:3": 256,
+                  "MaxDurability:3": 255,
                   "ToolSpeed:5": 6.0
-                }
+                },
+                "HideFlags:3": 2
               }
             },
             "1:10": {
@@ -818,38 +920,115 @@
                 },
                 "HideFlags:3": 2
               }
-            },
-            "5:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "entryLogic:8": "OR",
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 1,
-              "id:8": "gregtech:plunger",
+              "id:8": "gregtech:crowbar",
               "tag:10": {
+                "DisallowContainerItem:1": 0,
                 "GT.Behaviours:10": {},
                 "GT.Tool:10": {
-                  "AttackDamage:5": 0.0,
-                  "AttackSpeed:5": -2.4,
+                  "AttackDamage:5": 4.0,
+                  "AttackSpeed:5": -2.6000001,
                   "Durability:3": 0,
-                  "HarvestLevel:3": 1,
-                  "Material:8": "gregtech:rubber",
-                  "MaxDurability:3": 255,
-                  "ToolSpeed:5": 4.0
+                  "HarvestLevel:3": 2,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383,
+                  "ToolSpeed:5": 6.0
+                },
+                "HideFlags:3": 2
+              }
+            },
+            "1:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:wire_cutter",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {},
+                "GT.Tool:10": {
+                  "AttackDamage:5": 1.0,
+                  "AttackSpeed:5": -2.6000001,
+                  "Durability:3": 0,
+                  "HarvestLevel:3": 2,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383,
+                  "ToolSpeed:5": 6.0
+                },
+                "HideFlags:3": 2
+              }
+            },
+            "2:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:scythe",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {
+                  "AoEColumn:3": 2,
+                  "AoELayer:3": 2,
+                  "AoERow:3": 2,
+                  "MaxAoEColumn:3": 2,
+                  "MaxAoELayer:3": 2,
+                  "MaxAoERow:3": 2
+                },
+                "GT.Tool:10": {
+                  "AttackDamage:5": 7.0,
+                  "AttackSpeed:5": -3.2,
+                  "Durability:3": 0,
+                  "HarvestLevel:3": 2,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 1151,
+                  "ToolSpeed:5": 6.0
+                },
+                "HideFlags:3": 2
+              }
+            },
+            "3:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:butchery_knife",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {},
+                "GT.Tool:10": {
+                  "AttackDamage:5": 3.5,
+                  "AttackSpeed:5": -1.5,
+                  "Durability:3": 0,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383
+                },
+                "HideFlags:3": 2,
+                "ench:9": {
+                  "0:10": {
+                    "id:3": 21,
+                    "lvl:2": 3
+                  }
+                }
+              }
+            },
+            "4:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:knife",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {},
+                "GT.Tool:10": {
+                  "AttackDamage:5": 2.0,
+                  "AttackSpeed:5": 2.8,
+                  "Durability:3": 0,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 383
                 },
                 "HideFlags:3": 2
               }
             }
           },
           "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "OreDict:8": "toolShears",
-              "id:8": "minecraft:shears"
-            }
-          },
-          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -1306,7 +1485,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "このModPackの推奨難易度はハードです。\n\nこのModPackはピースフルでクリアできますが、満腹度が減らない状態だとGregTech Food Optionのコンテンツを消化できないので非推奨です。\n\n戦闘難易度こそ高いですがFTB Utilsのクエストにあるとおり/backコマンドが使えたり/sethomeが使えたりするので、戦闘でストレスが貯まることはあまりないと思われます。\nただしミニマップテレポートなどチート系の使用は非推奨です。",
+          "desc:8": "このModPackの推奨難易度はハードです。\n\n戦闘難易度こそ高いですがFTB Utilsのクエストにあるとおり/backコマンドが使えたり/sethomeが使えたりするので、戦闘でストレスが貯まることはあまりないと思われます。\nただしミニマップテレポートなどチート系の使用は非推奨です。\n\nまたこのModPackはピースフルでクリアも一応は可能になっています。\nconfigファイルの gtexpert.cfg にある peacefulFlag を true にすることで一部レシピが変更されます。\n\n\n余談その1\nいまとなっては何故ハード推奨にしていたか忘れ去れている。",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 4,
@@ -1610,7 +1789,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "§cクエストで分からないことが出てきたらまずこのクエストを読み直してみましょう§r\n\nクエストシステムにようこそ!!\n\nModPackのアップデートが入った際にクエストが古くなり正常に進行出来なくなる可能性があります(ModPack作者≠クエスト作者)。\nその際はDiscordやGithubなどで報告して頂ければ幸いです。\nまた、その時に限らずクエストは予告なしに変更されることがあります。\nこれを避けたい方はクエストの執筆完了をお待ちください。\n\nクエスト文は日本語クライアントでminecraftをプレイする日本人に合わせて書かれていますが、英語クライアントでも特に問題ありません。\n\n進行に必須であるクエストのアイコンは王冠または大きいアイコンで表示されます。\nそれ以外のクエストは四角で表示されます。\n\n説明のみのクエストは解放されたtierのタブと解説をまとめておく専用のタブの両方で表示されます。\n何か忘れたと感じた時にはいつでも解説専用のタブを開いてみましょう(未実装)。\n\n\n余談その1\nGTE1にはクエストがなかったので、GTE2でもクエストは実装されない...はずだった\n\n余談その2\nFTB Questのイライラ要因がBetter Questing Unofficialで全部解消されたりQOLが取り込まれたりされたため、全クエストの再チェックや並び替えを行いながら移行された(ModPack 2.7.0から)\nこの場を借りて感謝いたします",
+          "desc:8": "§cクエストで分からないことが出てきたらまずこのクエストを読み直してみましょう§r\n\nクエストシステムにようこそ!!\n\nModPackのアップデートが入った際にクエストが古くなり正常に進行出来なくなる可能性があります。\nその際はDiscordやGithubなどで報告して頂ければ幸いです。\nまた、その時に限らずクエストは予告なしに変更されることがあります。\nこれを避けたい方はクエストの執筆完了をお待ちください。\n\nクエスト文は日本語クライアントでminecraftをプレイする日本人に合わせて書かれていますが、英語クライアントでも特に問題ありません。\n\n進行に必須であるクエストのアイコンは王冠または大きいアイコンで表示されます。\nそれ以外のクエストは四角で表示されます。\n\n\n余談その1\nGTE1にはクエストがなかったので、GTE2でもクエストは実装されない...はずだった\n\n余談その2\nFTB Questのイライラ要因がBetter Questing Unofficialで全部解消されたりQoLが取り込まれたりされたため、全クエストの再チェックや並び替えを行いながら移行された(ModPack 2.7.0から)\nこの場を借りて感謝いたします",
           "icon:10": {
             "Count:3": 1,
             "id:8": "betterquesting:quest_book"
@@ -1824,7 +2003,6 @@
       },
       "tasks:9": {
         "0:10": {
-          "ignoreNBT:1": 1,
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
@@ -2209,30 +2387,71 @@
               }
             }
           },
-          "name:8": "ビットコインも掘れる"
+          "name:8": "ビットコインも掘れる",
+          "tasklogic:8": "OR"
         }
       },
       "questID:3": 48,
       "tasks:9": {
         "0:10": {
-          "ignoreNBT:1": 1,
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 32767,
               "id:8": "gregtech:mining_hammer",
               "tag:10": {
-                "GT.Behaviours:10": {},
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {
+                  "AoEColumn:3": 1,
+                  "AoELayer:3": 0,
+                  "AoERow:3": 1,
+                  "MaxAoEColumn:3": 1,
+                  "MaxAoELayer:3": 0,
+                  "MaxAoERow:3": 1,
+                  "TorchPlacing:1": 1
+                },
                 "GT.Tool:10": {
                   "AttackDamage:5": 3.5,
                   "AttackSpeed:5": -3.2,
                   "Durability:3": 0,
                   "HarvestLevel:3": 2,
                   "Material:8": "gregtech:iron",
-                  "MaxDurability:3": 768,
+                  "MaxDurability:3": 767,
                   "ToolSpeed:5": 4.8
-                }
+                },
+                "HideFlags:3": 2
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "gregtech:mining_hammer",
+              "tag:10": {
+                "DisallowContainerItem:1": 0,
+                "GT.Behaviours:10": {
+                  "AoEColumn:3": 1,
+                  "AoELayer:3": 0,
+                  "AoERow:3": 1,
+                  "MaxAoEColumn:3": 1,
+                  "MaxAoELayer:3": 0,
+                  "MaxAoERow:3": 1,
+                  "TorchPlacing:1": 1
+                },
+                "GT.Tool:10": {
+                  "AttackDamage:5": 3.5,
+                  "AttackSpeed:5": -3.4,
+                  "Durability:3": 0,
+                  "HarvestLevel:3": 2,
+                  "Material:8": "gregtech:wrought_iron",
+                  "MaxDurability:3": 1151,
+                  "ToolSpeed:5": 4.8
+                },
+                "HideFlags:3": 2
               }
             }
           },
@@ -4352,7 +4571,7 @@
     "113:10": {
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "GTECで追加される機械達をまとめてみました。\n\n主にEnderIOマシンの電化や序盤の資材集め、そしてエンドコンテンツに至るまで幅広い範囲に利用可能な機械が揃っています。",
+          "desc:8": "GTECoreで追加される機械達をまとめてみました。\n\n主にEnderIOマシンの電化や序盤の資材集め、そしてエンドコンテンツに至るまで幅広い範囲に利用可能な機械が揃っています。",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:nether_star"
@@ -4370,11 +4589,9 @@
     },
     "114:10": {
       "preRequisiteTypes:7": [
-        0,
         1
       ],
       "preRequisites:11": [
-        691,
         113
       ],
       "properties:10": {
@@ -4688,7 +4905,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "§c§l※この鉱石はGTE2で登場するオリジナルです。本家CEuには登場しないのでご注意ください。§r\n\nDraconic Evolution(以下DE)がついに解禁されました。\nDEは現在存在するLuVからUHVまでをカバーする強力なコンテンツで、最終的にはエンドコンテンツまで絡んできます。\nまた様々な貴重な鉱石を含みエンド限定で生成されます。\n\n採掘方法は以下の通りです: \n①QuarkTech防具をフル装備作成します。\n②電動探知機も高Tierに作り変えます(ドリルやバッテリーも可能なら高Tierに)。\n③エンドに移動します。\n④xz座標が5000ブロックの間隔で§c§lカオス島§rが生成されているので探します。\n⑤見つけたら電動探知機を利用してスキャンし、鉱脈を探します。\n⑥見つけられたら掘ります。",
+          "desc:8": "§c§l※この鉱石はGTE2で登場するオリジナルです。本家CEuには登場しないのでご注意ください。§r\n\nDraconic Evolution(以下DE)がついに解禁されました。\nDEは現在存在するLuVからUHVまでをカバーする強力なコンテンツで、最終的にはエンドコンテンツまで絡んできます。\nまた様々な貴重な鉱石を含みエンド限定で生成されます。\n\n採掘方法は以下の通りです: \n①QuarkTech防具をフル装備作成します。\n②電動探知機も高Tierに作り変えます(ドリルやバッテリーも可能なら高Tierに)。\n③エンドに移動します。\n④xz座標が5000ブロックの間隔で§c§lカオス島§rが生成されているので探します。\n⑤見つけたら電動探知機を利用してスキャンし、鉱脈を探します。\n⑥見つけられたら掘ります。\n\n\n余談その1\nこの要素の元ネタはFTB Interactionsである。\nまたこの時はオスミウムを得るためにイリジウム鉱石を掘って入手するという方法で、更にはオスミウムが入手できないとLuVを始められないという仕様にされていた。",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 2,
@@ -6617,7 +6834,7 @@
                   "Durability:3": 0,
                   "HarvestLevel:3": 2,
                   "Material:8": "gregtech:invar",
-                  "MaxDurability:3": 384,
+                  "MaxDurability:3": 1151,
                   "ToolSpeed:5": 5.6
                 },
                 "HideFlags:3": 2,
@@ -10335,14 +10552,14 @@
       ],
       "preRequisites:11": [
         405,
-        113
+        1759778029
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "原木から木材を高速かつ最高効率で作れるようになります。\n大量に必要になったときに作成しましょう。",
+          "desc:8": "原木から木材を高速かつ最高効率で作れるようになります。\n大量に必要になったときに作成しましょう。\n\n\n余談その1\n元々はGTECoreとして追加していたが、色々な木材に対応するためにModPackバージョンv2.7.9から別Modに変更された。\n§mちなみに移動後にクエストブックの更新を忘れ去られて居た過去を持つ。§r",
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 12001,
+            "Damage:2": 10000,
             "id:8": "gregtech:machine"
           },
           "name:8": "材木屋さん",
@@ -10356,7 +10573,7 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 12001,
+              "Damage:2": 10000,
               "id:8": "gregtech:machine"
             }
           },
@@ -16224,6 +16441,7 @@
       "questID:3": 544,
       "tasks:9": {
         "0:10": {
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
@@ -16232,14 +16450,8 @@
               "tag:10": {
                 "MagnetMode:3": 0
               }
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "index:3": 1,
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "Count:3": 1,
               "id:8": "ae2wtlib:infinity_booster_card"
             }
@@ -19966,11 +20178,9 @@
     },
     "529:10": {
       "preRequisiteTypes:7": [
-        0,
         1
       ],
       "preRequisites:11": [
-        753,
         113
       ],
       "properties:10": {
@@ -22214,11 +22424,9 @@
     },
     "590:10": {
       "preRequisiteTypes:7": [
-        0,
         1
       ],
       "preRequisites:11": [
-        691,
         113
       ],
       "properties:10": {
@@ -23697,11 +23905,9 @@
     },
     "632:10": {
       "preRequisiteTypes:7": [
-        0,
         1
       ],
       "preRequisites:11": [
-        781,
         113
       ],
       "properties:10": {
@@ -23949,11 +24155,9 @@
     },
     "639:10": {
       "preRequisiteTypes:7": [
-        0,
         1
       ],
       "preRequisites:11": [
-        781,
         113
       ],
       "properties:10": {
@@ -26453,6 +26657,53 @@
       }
     },
     "705:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ],
+      "preRequisites:11": [
+        619,
+        1759778029
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 21507,
+            "id:8": "gregtech:machine"
+          },
+          "name:8": "みんなが待ち焦がれたもの",
+          "questlogic:8": "OR"
+        }
+      },
+      "questID:3": 490571771,
+      "tasks:9": {
+        "0:10": {
+          "entryLogic:8": "OR",
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 21507,
+              "id:8": "gregtech:machine"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 21508,
+              "id:8": "gregtech:machine"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 21509,
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "706:10": {
       "preRequisites:11": [
         316,
         358
@@ -26600,7 +26851,68 @@
         }
       }
     },
-    "706:10": {
+    "707:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ],
+      "preRequisites:11": [
+        342,
+        1759778029
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 21503,
+            "id:8": "gregtech:machine"
+          },
+          "name:8": "取り回し最高",
+          "questlogic:8": "OR"
+        }
+      },
+      "questID:3": 1347342153,
+      "tasks:9": {
+        "0:10": {
+          "entryLogic:8": "OR",
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 21503,
+              "id:8": "gregtech:machine"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 21504,
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "708:10": {
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "大枠に分類できない機械達を揃えました。",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:nether_star"
+          },
+          "name:8": "その他の機械たち"
+        }
+      },
+      "questID:3": 1759778029,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "709:10": {
       "preRequisiteTypes:7": [
         1
       ],
@@ -26626,6 +26938,95 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 2028,
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "710:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ],
+      "preRequisites:11": [
+        699,
+        1759778029
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 21500,
+            "id:8": "gregtech:machine"
+          },
+          "name:8": "核融拳n倍だぁ！",
+          "questlogic:8": "OR"
+        }
+      },
+      "questID:3": 1962307874,
+      "tasks:9": {
+        "0:10": {
+          "entryLogic:8": "OR",
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 21500,
+              "id:8": "gregtech:machine"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 21501,
+              "id:8": "gregtech:machine"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 21502,
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "711:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ],
+      "preRequisites:11": [
+        480,
+        1759778029
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 21505,
+            "id:8": "gregtech:machine"
+          },
+          "name:8": "加熱するなら冷却もだよね",
+          "questlogic:8": "OR"
+        }
+      },
+      "questID:3": 2022366844,
+      "tasks:9": {
+        "0:10": {
+          "entryLogic:8": "OR",
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 21505,
+              "id:8": "gregtech:machine"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 21506,
               "id:8": "gregtech:machine"
             }
           },
@@ -32027,7 +32428,7 @@
             "Damage:2": 1004,
             "id:8": "gregtech:meta_item_1"
           },
-          "name:8": "GCYM / GTFO / GTEC"
+          "name:8": "GCYM / GTFO / GTECore / etc..."
         }
       },
       "quests:9": {
@@ -32035,35 +32436,35 @@
           "id:3": 6,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 176,
-          "y:3": 112
+          "x:3": 144,
+          "y:3": 144
         },
         "1:10": {
           "id:3": 17,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 384,
-          "y:3": 48
+          "x:3": 256,
+          "y:3": 80
         },
         "2:10": {
           "id:3": 37,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 352,
+          "x:3": 320,
           "y:3": 48
         },
         "3:10": {
           "id:3": 41,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 288,
+          "x:3": 256,
           "y:3": 48
         },
         "4:10": {
           "id:3": 113,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 336,
+          "x:3": 288,
           "y:3": 0
         },
         "5:10": {
@@ -32077,7 +32478,7 @@
           "id:3": 124,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 144,
+          "x:3": 208,
           "y:3": 112
         },
         "7:10": {
@@ -32098,14 +32499,14 @@
           "id:3": 383,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 320,
-          "y:3": 80
+          "x:3": 368,
+          "y:3": 48
         },
         "10:10": {
           "id:3": 417,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 320,
+          "x:3": 288,
           "y:3": 48
         },
         "11:10": {
@@ -32196,7 +32597,7 @@
           "id:3": 643,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 352,
+          "x:3": 320,
           "y:3": 80
         },
         "24:10": {
@@ -32287,29 +32688,29 @@
           "id:3": 705,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 320,
+          "x:3": 256,
           "y:3": 112
         },
         "37:10": {
           "id:3": 752,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 352,
+          "x:3": 320,
           "y:3": 112
         },
         "38:10": {
           "id:3": 760,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 384,
-          "y:3": 80
+          "x:3": 256,
+          "y:3": 144
         },
         "39:10": {
           "id:3": 826,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 208,
-          "y:3": 112
+          "x:3": 176,
+          "y:3": 144
         },
         "40:10": {
           "id:3": 833,
@@ -32322,7 +32723,7 @@
           "id:3": 844,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 192,
+          "x:3": 176,
           "y:3": 0
         },
         "42:10": {
@@ -32336,36 +32737,36 @@
           "id:3": 876,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 144,
+          "x:3": 176,
           "y:3": 80
         },
         "44:10": {
           "id:3": 879,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 240,
-          "y:3": 48
+          "x:3": 144,
+          "y:3": 80
         },
         "45:10": {
           "id:3": 895,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 208,
-          "y:3": 80
+          "x:3": 144,
+          "y:3": 112
         },
         "46:10": {
           "id:3": 915,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 176,
+          "x:3": 208,
           "y:3": 80
         },
         "47:10": {
           "id:3": 917,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 240,
-          "y:3": 80
+          "x:3": 176,
+          "y:3": 112
         },
         "48:10": {
           "id:3": 934,
@@ -32396,11 +32797,46 @@
           "y:3": 208
         },
         "52:10": {
+          "id:3": 490571771,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 432,
+          "y:3": 48
+        },
+        "53:10": {
+          "id:3": 1347342153,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 368,
+          "y:3": 80
+        },
+        "54:10": {
+          "id:3": 1759778029,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 400,
+          "y:3": 0
+        },
+        "55:10": {
           "id:3": 1872531246,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 32,
           "y:3": 240
+        },
+        "56:10": {
+          "id:3": 1962307874,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 400,
+          "y:3": 48
+        },
+        "57:10": {
+          "id:3": 2022366844,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 400,
+          "y:3": 80
         }
       }
     }

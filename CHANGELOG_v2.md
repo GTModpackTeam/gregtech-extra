@@ -1,3 +1,33 @@
+# v2.7.10
+## Modpack information
+- Fixed some quests.
+- Adjusted the generation chance of Draconium ore generated on Chaos Island.
+- Galena and Realgar veins added on End Island.
+    - Not generated on Chaos Island.
+
+## Remove mods
+- Better Advancements (0.1.0.77)
+
+## New mods
+- GTConsolidate (1.0.1.1)
+
+## Update mods
+- Advanced Backups (3.6.4 -> 3.6.5)
+- CraftPresence (2.5.2 -> 2.5.3)
+- CensoredASM (5.20 -> 5.22)
+- Fixeroo (2.3.2 -> 2.3.4)
+- GTExpert-Core (2.4.0 -> 2.4.2)
+- GTWoodProcessing (1.2.2 -> 1.2.3)
+- Nutrition Unofficial Extended Life (4.13.0 -> 4.16.0)
+- OpenComputers (1.8.6 -> 1.8.7)
+- UniLib (1.0.4 -> 1.0.5)
+- Universal Tweaks (1.13.0 -> 1.14.0)
+
+## Update resourcepack
+- GhaTech (1.6 -> 1.7)
+
+* * *
+
 # v2.7.9
 ## Modpack information
 - ProjectRed mods can no longer be downloaded automatically, so they are now obtained at startup.

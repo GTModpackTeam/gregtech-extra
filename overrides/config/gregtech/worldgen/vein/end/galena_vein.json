@@ -1,11 +1,11 @@
 {
-  "weight": 20,
-  "density": 0.10,
-  "min_height": 175,
-  "max_height": 195,
+  "weight": 10,
+  "density": 0.25,
+  "min_height": 10,
+  "max_height": 60,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "draconium"
+    "material": "galena"
   },
   "dimension_filter": [
     "name:the_end"
@@ -21,16 +21,16 @@
     "type": "layered",
     "values": [
       {
-        "primary": "ore:draconium"
+        "primary": "ore:galena"
       },
       {
-        "secondary": "ore:osmium"
+        "secondary": "ore:galena"
       },
       {
-        "between": "ore:iridium"
+        "between": "ore:silver"
       },
       {
-        "sporadic": "ore:iron"
+        "sporadic": "ore:lead"
       }
     ]
   }

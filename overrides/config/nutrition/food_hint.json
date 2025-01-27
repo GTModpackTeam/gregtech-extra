@@ -1,0 +1,24 @@
+{
+  "hints": [
+    {
+      "id": "extraplanets:canned_food",
+      "meta": 0,
+      "healAmount": 16
+    },
+    {
+      "id": "extraplanets:canned_food",
+      "meta": 1,
+      "healAmount": 4
+    },
+    {
+      "id": "extraplanets:canned_food",
+      "meta": 2,
+      "healAmount": 4
+    },
+    {
+      "id": "extraplanets:canned_food",
+      "meta": 3,
+      "healAmount": 12
+    }
+  ]
+}
